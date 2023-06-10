@@ -4,12 +4,15 @@
 
 html, body { @apply h-full overflow-hidden; }
 body {
+  background-color: #1b1f24;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	@apply  text-sm bg-neutral-100 dark:bg-surface-1 text-neutral-950 dark:text-text-2 w-full;
+	@apply text-sm  text-neutral-950 dark:text-neutral-50 w-full;
 }
 
 @layer base {
   :root {
+    --color-canvas-default: 36 41 47; /* #24292f */
+    --color-border-default: 48 54 61; /* #30363d */
     --color-primary: 255 115 179;
     --color-secondary: 111 114 185;
     --color-error: 212 25 118;
