@@ -1,32 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html, body { @apply h-full overflow-hidden; }
-body {
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	@apply  text-sm bg-neutral-100 dark:bg-surface-1 text-neutral-950 dark:text-text-2 w-full;
-}
-
-@layer base {
-  :root {
-    --color-primary: 255 115 179;
-    --color-secondary: 111 114 185;
-    --color-error: 212 25 118;
-    /* ... */
-    --gray-0: 248 249 250; /* #f8f9fa */
-    --gray-1: 241 243 245; /* #f1f3f5 */
-    --gray-2: 233 236 239; /* #e9ecef */
-    --gray-3: 222 226 230; /* #dee2e6 */
-    --gray-4: 206 212 218; /* #ced4da */
-    --gray-5: 173 181 189; /* #adb5bd */
-    --gray-6: 134 142 150; /* #868e96 */
-    --gray-7: 73 80 87; /* #495057 */
-    --gray-8: 52 58 64; /* #343a40 */
-    --gray-9: 33 37 41; /* #212529 33 37 41*/
-    --gray-10: 22 25 29; /* #16191d */ 
-    --gray-11: 13 15 18; /* #0d0f12 */
-    --gray-12: 3 5 7; /* #030507 */
+:root {
+    --gray-0: #f8f9fa;
+    --gray-1: #f1f3f5;
+    --gray-2: #e9ecef;
+    --gray-3: #dee2e6;
+    --gray-4: #ced4da;
+    --gray-5: #adb5bd;
+    --gray-6: #868e96;
+    --gray-7: #495057;
+    --gray-8: #343a40;
+    --gray-9: #212529;
+    --gray-10: #16191d;
+    --gray-11: #0d0f12;
+    --gray-12: #030507;
     --stone-0: #f8fafb;
     --stone-1: #f2f4f6;
     --stone-2: #ebedef;
@@ -261,21 +246,4 @@ body {
     --jungle-10: #658006;
     --jungle-11: #516605;
     --jungle-12: #3d4d04;
-
-    /* Shadows */
-    --shadow-color: 220 3% 15%;
-    --shadow-strength: 1%;
-  }
-}
-
-@layer components {
-  .btn {
-    @apply text-white shadow-sm font-semibold py-2 px-3 bg-indigo-600 rounded-md hover:bg-indigo-500;
-  }
-  .btn-primary {
-    @apply inline-block rounded bg-primary-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)];
-  }
-  .btn-secondary {
-    @apply inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200;
-  }
 }

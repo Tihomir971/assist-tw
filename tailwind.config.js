@@ -37,9 +37,23 @@ export default {
       colors: {
         primary: colors.violet,
         "primary-accent": colors.rose,
-        error: 'rgb(var(--color-error) / 100)'
-        
+        error: "rgb(var(--color-error) / 100)",
+        link: "rgb(var(--indigo-3) / 100)",
+        "link-visited": "rgb(var(--purple-3) / 100)",
+        text: {
+          1: "rgb(var(--gray-1) / 100)",
+          2: "rgb(var(--gray-4) / 100)"
+        },
+        surface: {
+          1: "rgb(var(--gray-9) / 100)",
+          2: "rgb(var(--gray-8) / 100)",
+          3: "rgb(var(--gray-7) / 100)",
+          4: "rgb(var(--gray-6) / 100)"
+        },
       },
+      boxShadow:{
+        1: "0 1px 2px -1px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%))"
+      }
     },
   },
   plugins: []
