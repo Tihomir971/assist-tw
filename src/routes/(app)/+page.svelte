@@ -15,7 +15,7 @@
 </script>
 
 <section
-	class="flex w-3/12 flex-col items-center justify-center rounded-lg bg-white p-8 shadow-lg dark:bg-neutral-800"
+	class="flex w-3/12 flex-col items-center justify-center rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-800"
 >
 	<!--Logo-->
 	<img
@@ -23,7 +23,7 @@
 		src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
 		alt="logo"
 	/>
-	<h4 class="mb-12 mt-1 pb-1 text-center text-xl font-semibold">We are The Kalisi Team</h4>
+	<h4 class="mb-6 mt-1 pb-1 text-center text-xl font-semibold">We are The Kalisi Team</h4>
 
 	<form action="/?/signin-with-password" method="post" use:enhance={handleSubmit} class="w-full">
 		<p class="mb-4">Please login to your account</p>
@@ -130,10 +130,9 @@
 											title="Mail"
 										/>
 									</div> -->
-		<br />
 
 		<!--Submit button-->
-		<div class="mb-12 pb-1 pt-1 text-center">
+		<div class="text-center">
 			<button
 				class="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
 				disabled={loading}
@@ -147,6 +146,3 @@
 		</div>
 	</form>
 </section>
-
-<style lang="postcss">
-</style>

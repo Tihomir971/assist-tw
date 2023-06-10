@@ -2,13 +2,15 @@
 	let className = '';
 	export { className as class };
 	export let title = 'Unknown title';
-	let classDef = 'bg-neutral-200 dark:bg-neutral-700 p-8 drop-shadow-md rounded-md';
+	let classDef = 'bg-neutral-200 dark:bg-canvas p-8 drop-shadow-md rounded-md';
 	$: classesBase = `${className} ${classDef} ${$$props.class ?? ''}`;
 </script>
 
-<article class={classesBase}>
-	<div class="mb-4">
-		<div class="text-2xl">
+<article
+	class="mx-6 rounded-md border border-solid border-border bg-neutral-200 p-8 shadow-sm shadow-black dark:bg-canvas"
+>
+	<div class="mb-6">
+		<div class="text-w mb-6 text-xl font-semibold">
 			{title}
 		</div>
 

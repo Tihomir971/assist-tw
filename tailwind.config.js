@@ -35,6 +35,8 @@ export default {
     },
     extend: {
       colors: {
+        canvas: 'rgb(var(--color-canvas-default) / 100)',
+        border: "rgb(var(--color-border-default) / 100)",
         primary: colors.violet,
         "primary-accent": colors.rose,
         error: 'rgb(var(--color-error) / 100)'
