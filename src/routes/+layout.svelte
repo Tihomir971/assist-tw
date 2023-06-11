@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { invalidate } from '$app/navigation';
+	import '$lib/styles/tailwind.css';
 	import { onMount } from 'svelte';
 	import '../app.css';
 

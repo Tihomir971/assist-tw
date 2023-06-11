@@ -15,7 +15,7 @@
 		</div>
 		<div slot="footer">
 			<button class="btn-secondary">Secondary Button</button>
-			<button class="btn-primary">Primary Button</button>
+			<button class="btn variant-outline-primary">Primary Button</button>
 		</div>
 	</Card>
 	<Card title="User data">

@@ -7,7 +7,7 @@
 </script>
 
 <article
-	class="mx-6 rounded-md border border-solid border-border bg-neutral-200 p-8 shadow-sm shadow-black dark:bg-canvas"
+	class="mx-6 rounded-md border border-solid border-border bg-neutral-200 p-8 shadow-3 dark:bg-surface-2"
 >
 	<div class="mb-6">
 		<div class="text-w mb-6 text-xl font-semibold">

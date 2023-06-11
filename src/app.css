@@ -1,15 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
 
 html, body { @apply h-full overflow-hidden; }
 body {
-  background-color: #1b1f24;
+  /* background-color: #1b1f24; */
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	@apply text-sm  text-neutral-950 dark:text-neutral-50 w-full;
+	@apply text-sm  text-neutral-950 dark:text-neutral-50 w-full dark:bg-surface-1;
 }
 
-@layer base {
   :root {
     --color-canvas-default: 36 41 47; /* #24292f */
     --color-border-default: 48 54 61; /* #30363d */
@@ -266,13 +265,13 @@ body {
     --jungle-12: #3d4d04;
 
     /* Shadows */
-    --shadow-color: 220 3% 15%;
-    --shadow-strength: 1%;
+    --shadow-color: 220 40% 2%;
+    --shadow-strength: 25%;
   }
-}
 
-@layer components {
-  .btn {
+
+
+/*  .btn {
     @apply text-white shadow-sm font-semibold py-2 px-3 bg-indigo-600 rounded-md hover:bg-indigo-500;
   }
   .btn-primary {
@@ -281,4 +280,4 @@ body {
   .btn-secondary {
     @apply inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200;
   }
-}
+*/
