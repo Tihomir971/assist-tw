@@ -6,6 +6,8 @@
 	$: ({ testTable, user } = data);
 </script>
 
+<h1>H1</h1>
+<a href="/">Go</a>
 <div class="flex justify-center">
 	<Card title="Table data">
 		<div class="block">
@@ -15,7 +17,7 @@
 		</div>
 		<div slot="footer">
 			<button class="btn-secondary">Secondary Button</button>
-			<button class="btn variant-outline-primary">Primary Button</button>
+			<button>Primary Button</button>
 		</div>
 	</Card>
 	<Card title="User data">

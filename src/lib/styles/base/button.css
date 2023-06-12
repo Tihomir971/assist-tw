@@ -1,0 +1,5 @@
+@layer base {
+    button, [type='button'], [type='reset'], [type='submit'] {
+        @apply touch-manipulation     
+    }
+}

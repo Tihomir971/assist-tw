@@ -35,6 +35,10 @@ export default {
     },
     extend: {
       colors: {
+       /*  text:{
+          1: 'rgb(var(--text-1) / 100)',
+          2: 'rgb(var(--text-2) / 100)'
+        }, */
         canvas: 'rgb(var(--color-canvas-default) / 100)',
         border: "rgb(var(--color-border-default) / 100)",
         primary: colors.violet,
@@ -42,10 +46,6 @@ export default {
         error: "rgb(var(--color-error) / 100)",
         link: "rgb(var(--indigo-3) / 100)",
         "link-visited": "rgb(var(--purple-3) / 100)",
-        text: {
-          1: "rgb(var(--gray-1) / 100)",
-          2: "rgb(var(--gray-4) / 100)"
-        },
         surface: {
           1: "rgb(var(--gray-9) / 100)",
           2: "rgb(var(--gray-8) / 100)",

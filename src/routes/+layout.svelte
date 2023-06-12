@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { invalidate } from '$app/navigation';
-	import '$lib/styles/tailwind.css';
 	import { onMount } from 'svelte';
+	// Your custom Skeleton theme:
+	import '../theme.postcss';
+
 	import '../app.css';
 
 	export let data;
