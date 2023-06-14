@@ -1,30 +1,26 @@
 <script lang="ts">
 	let className = '';
 	export { className as class };
-	export let title = 'Unknown title';
 	let classDef = 'text-text-1 bg-neutral-200 dark:bg-canvas p-8 drop-shadow-md rounded-md';
 	$: classesBase = `${className} ${classDef} ${$$props.class ?? ''}`;
 </script>
 
 <article
-	class="mx-6 rounded-md border border-solid border-border bg-neutral-200 p-8 shadow-3 dark:bg-surface-2"
+	class="m-4 flex w-fit flex-col justify-between rounded-md border border-solid border-surface-3-light bg-white shadow-lg dark:border-surface-2-dark dark:bg-surface-1-dark dark:shadow-3"
 >
-	<div class="mb-6">
-		<div class="text-w mb-6 text-xl font-semibold">
-			{title}
+	{#if $$slots.header}
+		<div class="px-6 py-4 text-lg shadow-2 dark:bg-surface-2-dark dark:shadow-2">
+			<slot name="header" />
 		</div>
-
-		<div class="my-2 border-b border-gray-200 pb-8">
-			<slot>
-				<span class="missing">Unknown address</span>
-			</slot>
-		</div>
-		{#if $$slots.footer}
-			<div class="my-2 border-b border-gray-200 pb-8">
-				<slot name="footer">
-					<span class="missing">Unknown email</span>
-				</slot>
-			</div>
-		{/if}
+	{/if}
+	<div class="px-6 py-4">
+		<slot>
+			<span class="missing">Unknown address</span>
+		</slot>
 	</div>
+	{#if $$slots.footer}
+		<div class="px-6 py-4 text-lg shadow-2 dark:bg-surface-2-dark">
+			<slot name="footer" />
+		</div>
+	{/if}
 </article>

@@ -33,9 +33,10 @@
 
 
 html, body { @apply h-full overflow-hidden; }
-/* body { */
+
+body {
   /* background-color: #1b1f24; */
 	/* transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; */
-	/* @apply text-sm  text-neutral-950 dark:text-neutral-50 w-full dark:bg-surface-1; */
-/* } */
+	@apply text-sm text-text-2-light bg-surface-1-light dark:text-text-1-dark w-full dark:bg-surface-1-dark;
+}
 
