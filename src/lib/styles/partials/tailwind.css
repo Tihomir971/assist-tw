@@ -10,7 +10,8 @@ Tailwind directives should only be included ONCE per project.
 These directives should precede ALL Skeleton stylesheets.
 */
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind variants;
+/* @tailwind variants; */

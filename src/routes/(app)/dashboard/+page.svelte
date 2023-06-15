@@ -29,4 +29,12 @@
 		</div>
 		<div slot="footer">Footer</div>
 	</Card>
+	<div class="card">
+		<div class="card-header bg-surface-100">User data</div>
+		<div class="block">
+			<p>user:</p>
+			<pre>{JSON.stringify(user, null, 2)}</pre>
+		</div>
+		<div class="card-footer bg-surface-100">Footer</div>
+	</div>
 </div>

@@ -1,15 +1,18 @@
 <script lang="ts">
+	// My custom theme
+	/* import '../theme.postcss'; */
+	import '../app.css';
+
+	// Svelte
 	import { invalidate } from '$app/navigation';
 	import { onMount } from 'svelte';
-	// My custom theme
-	import '../theme.postcss';
-	// App Themes
 	import { page } from '$app/stores';
+
+	// Components
 	import AppBar from '$lib/components/AppBar/AppBar.svelte';
 	import AppRail from '$lib/components/ui/AppRail/AppRail.svelte';
 	import AppRailAnchor from '$lib/components/ui/AppRail/AppRailAnchor.svelte';
 	import AppShell from '$lib/components/ui/AppShell.svelte';
-	import '../app.css';
 
 	export let data;
 
@@ -64,14 +67,14 @@
 				<!-- Team link -->
 				<li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
 					<a
-						class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+						class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 lg:px-2"
 						href="/">Team</a
 					>
 				</li>
 				<!-- Projects link -->
 				<li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
 					<a
-						class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+						class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 lg:px-2"
 						href="/">Projects</a
 					>
 				</li>
@@ -79,7 +82,7 @@
 			<!-- <Header /> -->
 			<svelte:fragment slot="trail">
 				<a
-					class="flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+					class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 flex items-center"
 					href="/"
 					id="dropdownMenuButton1"
 					role="button"

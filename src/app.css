@@ -1,69 +1,8 @@
-@import '$lib/styles/props/props.colors.css';
-@import './tailwind.css';
+@import '$lib/styles/themes/index.css';
+@import '$lib/styles/skeleton.css';
 
-* {
-	/* light */
-	--text-100-light: var(--gray-9);
-	--text-200-light: var(--gray-7);
-
-	--surface-100-light: var(--gray-0);
-	--surface-200-light: var(--gray-2);
-	--surface-300-light: var(--gray-3);
-	--surface-400-light: var(--gray-4);
-
-	/* dark */
-	--text-100-dark: var(--gray-1);
-	--text-200-dark: var(--gray-4);
-
-	--surface-100-dark: var(--gray-9);
-	--surface-200-dark: var(--gray-8);
-	--surface-300-dark: var(--gray-7);
-	--surface-400-dark: var(--gray-6);
-}
-
-:root {
-	data-color-scheme: light;
-
-	/* defaults */
-	--text-100: var(--text-100-light);
-	--text-200: var(--text-200-light);
-	--surface-100: var(--surface-100-light);
-	--surface-200: var(--surface-200-light);
-	--surface-300: var(--surface-300-light);
-	--surface-400: var(--surface-400-light);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		data-color-scheme: dark;
-
-		--text-100: var(--text-100-dark);
-		--text-200: var(--text-200-dark);
-		--surface-100: var(--surface-100-dark);
-		--surface-200: var(--surface-200-dark);
-		--surface-300: var(--surface-300-dark);
-		--surface-400: var(--surface-400-dark);
+@layer base {
+	html, body {
+		@apply h-full bg-surface-100 text-text-100;
 	}
-}
-
-[data-color-scheme='light'] {
-	data-color-scheme: light;
-
-	--text-100: var(--text-100-light);
-	--text-200: var(--text-200-light);
-	--surface-100: var(--surface-100-light);
-	--surface-200: var(--surface-200-light);
-	--surface-300: var(--surface-300-light);
-	--surface-400: var(--surface-400-light);
-}
-
-[data-color-scheme='dark'] {
-	data-color-scheme: dark;
-
-	--text-100: var(--text-100-dark);
-	--text-200: var(--text-200-dark);
-	--surface-100: var(--surface-100-dark);
-	--surface-200: var(--surface-200-dark);
-	--surface-300: var(--surface-300-dark);
-	--surface-400: var(--surface-400-dark);
 }
