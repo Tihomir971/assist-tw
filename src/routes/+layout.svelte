@@ -31,9 +31,9 @@
 <svelte:head>
 	<title>Assist with TW</title>
 </svelte:head>
-<AppShell>
+<AppShell slotHeader="">
 	<svelte:fragment slot="header">
-		<AppBar>
+		<AppBar padding="0px" regionRowMain="h-12" slotLead="w-12">
 			<svelte:fragment slot="lead">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@
 			<!-- <Header /> -->
 			<svelte:fragment slot="trail">
 				<a
-					class="hidden-arrow mr-4 flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+					class="flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
 					href="/"
 					id="dropdownMenuButton1"
 					role="button"
@@ -109,7 +109,7 @@
 					>
 				</a>
 				<a
-					class="mr-4 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+					class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
 					href="/"
 				>
 					<span class="[&>svg]:w-5">
@@ -130,7 +130,7 @@
 					</span>
 				</a>
 				<a
-					class="hidden-arrow flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
+					class="flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
 					href="/"
 					id="dropdownMenuButton2"
 					role="button"
@@ -143,8 +143,8 @@
 						alt=""
 						loading="lazy"
 					/>
-				</a></svelte:fragment
-			>
+				</a>
+			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">

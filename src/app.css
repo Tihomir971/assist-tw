@@ -1,42 +1,69 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import '$lib/styles/props/props.colors.css';
+@import './tailwind.css';
 
-[data-theme="dark"] {
-  --link: var(--indigo-3);
-  --link-visited: var(--purple-3);
-  color: rgb(var(--gray-4) / 100);
-  --text-1: var(--gray-1);
-  --text-2: var(--gray-4);
+* {
+	/* light */
+	--text-100-light: var(--gray-9);
+	--text-200-light: var(--gray-7);
 
-  --surface-1: var(--gray-9);
-  --surface-2: var(--gray-8);
-  --surface-3: var(--gray-7);
-  --surface-4: var(--gray-6);
+	--surface-100-light: var(--gray-0);
+	--surface-200-light: var(--gray-2);
+	--surface-300-light: var(--gray-3);
+	--surface-400-light: var(--gray-4);
 
-  --scrollthumb-color: var(--gray-6);
-},
-[data-theme="light"] {
-  --link: var(--indigo-7);
-  --link-visited: var(--purple-7);
-  color: rgb(var(--gray-7) / 100);
-  --text-1: var(--gray-9);
-  --text-2: var(--gray-7);
+	/* dark */
+	--text-100-dark: var(--gray-1);
+	--text-200-dark: var(--gray-4);
 
-  --surface-1: var(--gray-0);
-  --surface-2: var(--gray-2);
-  --surface-3: var(--gray-3);
-  --surface-4: var(--gray-4);
-
-  --scrollthumb-color: var(--gray-7);
-},
-
-
-html, body { @apply h-full overflow-hidden; }
-
-body {
-  /* background-color: #1b1f24; */
-	/* transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; */
-	@apply text-sm text-text-2-light bg-surface-1-light dark:text-text-1-dark w-full dark:bg-surface-1-dark;
+	--surface-100-dark: var(--gray-9);
+	--surface-200-dark: var(--gray-8);
+	--surface-300-dark: var(--gray-7);
+	--surface-400-dark: var(--gray-6);
 }
 
+:root {
+	data-color-scheme: light;
+
+	/* defaults */
+	--text-100: var(--text-100-light);
+	--text-200: var(--text-200-light);
+	--surface-100: var(--surface-100-light);
+	--surface-200: var(--surface-200-light);
+	--surface-300: var(--surface-300-light);
+	--surface-400: var(--surface-400-light);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		data-color-scheme: dark;
+
+		--text-100: var(--text-100-dark);
+		--text-200: var(--text-200-dark);
+		--surface-100: var(--surface-100-dark);
+		--surface-200: var(--surface-200-dark);
+		--surface-300: var(--surface-300-dark);
+		--surface-400: var(--surface-400-dark);
+	}
+}
+
+[data-color-scheme='light'] {
+	data-color-scheme: light;
+
+	--text-100: var(--text-100-light);
+	--text-200: var(--text-200-light);
+	--surface-100: var(--surface-100-light);
+	--surface-200: var(--surface-200-light);
+	--surface-300: var(--surface-300-light);
+	--surface-400: var(--surface-400-light);
+}
+
+[data-color-scheme='dark'] {
+	data-color-scheme: dark;
+
+	--text-100: var(--text-100-dark);
+	--text-200: var(--text-200-dark);
+	--surface-100: var(--surface-100-dark);
+	--surface-200: var(--surface-200-dark);
+	--surface-300: var(--surface-300-dark);
+	--surface-400: var(--surface-400-dark);
+}

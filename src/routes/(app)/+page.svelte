@@ -19,28 +19,24 @@
 	<form action="/?/signin-with-password" method="post" use:enhance={handleSubmit} class="w-full">
 		<p class="mb-4 text-base">Please login to your account</p>
 		<div class="mb-6">
-			<label for="email" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-				>Email address</label
-			>
+			<label for="email" class="mb-2 block text-sm font-medium">Email address</label>
 			<input
 				type="email"
 				id="email"
 				name="email"
-				class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+				class="focus:border-blue-500 focus:ring-blue-500 dark:focus:border-blue-500 dark:focus:ring-blue-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
 				placeholder="Your Email"
 				autocomplete="email"
 				required
 			/>
 		</div>
 		<div class="mb-6">
-			<label for="password" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-				>Password</label
-			>
+			<label for="password" class="mb-2 block text-sm font-medium">Password</label>
 			<input
 				type="password"
 				id="password"
 				name="password"
-				class="no-autofill block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+				class="no-autofill focus:border-blue-500 focus:ring-blue-500 dark:focus:border-blue-500 dark:focus:ring-blue-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
 				placeholder="Enter password"
 				autocomplete="current-password"
 				required

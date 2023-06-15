@@ -10,7 +10,7 @@
 
 	// Props (base)
 	/** Provide classes to set background color. */
-	export let background: CssClasses = 'bg-clrBrand';
+	export let background: CssClasses = 'bg-surface-300';
 	/** Provide classes to set border styles. */
 	export let border: CssClasses = '';
 	/** Provide classes to set padding. */

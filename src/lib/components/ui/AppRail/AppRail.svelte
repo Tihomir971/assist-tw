@@ -9,7 +9,7 @@
 
 	// Props (rail)
 	/** Rail: Provide classes to set the background color. */
-	export let background = 'bg-surface-1-dark dark:bg-surface-1-dark';
+	export let background = 'bg-surface-100';
 	/** Rail: Provide classes to set the background color. */
 	export let border = '';
 	/** Rail: Provide classes to set the width. */
